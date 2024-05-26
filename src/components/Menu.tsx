@@ -47,7 +47,7 @@ const Menu = () => {
         onClick={() => setOpen((prev) => !prev)}
       />
       {open && (
-        <div className="flex flex-col">
+        <div className="absolute bg-black text-white left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-8 text-xl z-10">
           {links.map((link) => (
             <Link href={link.url} key={link.title}>
               {link.title}
